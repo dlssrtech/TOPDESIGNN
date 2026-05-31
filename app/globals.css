@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: light; }
+html { scroll-behavior: smooth; }
+body { @apply bg-white text-ink antialiased; }
+::selection { @apply bg-royal text-white; }
+.container-pad { @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8; }
+.gradient-text { @apply bg-gradient-to-r from-white via-cyan to-blue-200 bg-clip-text text-transparent; }
+.section-title { @apply text-3xl font-black tracking-tight text-ink md:text-5xl; }
+.section-kicker { @apply mb-3 inline-flex rounded-full border border-royal/20 bg-royal/10 px-4 py-2 text-sm font-bold text-royal; }
+.focus-ring { @apply focus:outline-none focus:ring-4 focus:ring-royal/25; }
+.card-hover { @apply transition duration-300 hover:-translate-y-1 hover:shadow-card; }
